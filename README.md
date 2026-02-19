@@ -58,7 +58,7 @@ These converted files can be used with various DNS and domain-blocking tools:
 
 # License:
 
-For more details, see the [LICENSE](https://github.com/blocklistproject/Lists/blob/master/LICENSE) file.
+For more details, see the [LICENSE](https://github.com/jukatax/Lists/blob/master/LICENSE) file.
 
 &nbsp;
 
