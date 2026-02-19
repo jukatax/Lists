@@ -3,7 +3,7 @@ name: False positive removal request
 about: Please use this form to create a remove request
 title: "[Remove Request] - "
 labels: remove request
-assignees: FDrebin, blocklistproject
+assignees: jukatax
 
 ---
 

@@ -1,4 +1,4 @@
-Contributing to The Block List Project
+Contributing to Jukatax
 
 Without the communities help and input this won't work! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
