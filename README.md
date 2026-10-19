@@ -26,7 +26,7 @@ These converted files can be used with various DNS and domain-blocking tools:
 
 1. Use the lists from the GasMask folder
 2. Copy the contents of each list into a local list
-3. Or add the raw list link as remove list
+3. Or add the raw list link as remote list
 
 &nbsp;
 
@@ -34,9 +34,11 @@ These converted files can be used with various DNS and domain-blocking tools:
 
 ## Main Lists
 
-| List | Link | Description | Sponsor<sup>&#8224;</sup> |
+| List | Link | Description | Notes |
 |--|--|--| -- |
-| All-in-1 for PiHole| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/yy_all_ads.txt) | Lists of sites created to deceive ||
+| All-in-1 for PiHole| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/yy_all_ads.txt) | 23MB Lists of sites created to serve ads ||
+| All-in-1 1of2 for PiHole| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/yy_all_ads_1_a-p.txt) | 11MB part 1 of 2 of the above main ads list ||
+| All-in-1 2of2 for PiHole| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/yy_all_ads_2_q-z.txt) | 12MB part 2 of 2 of the main ads list  ||
 | Abuse| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/abuse.txt) | Lists of sites created to deceive ||
 | Ads| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/ads.txt) | Ad servers/sites ||
 | Crypto| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/crypto.txt) | Crypto/cryptojacking based sites <br> <sup>Can break normal "good" crypto sites</sup> ||
