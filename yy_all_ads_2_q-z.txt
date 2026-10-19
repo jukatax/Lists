@@ -1,3 +1,4 @@
+# Total 530971
 q--proxy.tk
 q-counter.com
 q-mobi.affise.com
@@ -530959,3 +530960,14 @@ zzzzz.cz.cc
 zzzzzqp.com
 zzzzzzzz.su
 zzzzzzzzz.info
+# sudoku.com ads
+https-api-eu.bigolive.tv
+sdkopmetrics-eu.dsp-api.moloco.com
+sdkapi.dsp-api.moloco.com
+noti-eu.adsmoloco.com
+telemetry.tk0x1.com
+install.monetization-sdk.chartboost.com
+config.monetization-sdk.chartboost.com
+prefetch.monetization-sdk.chartboost.com
+f.everestop.io
+x.everestop.io
