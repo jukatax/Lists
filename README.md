@@ -36,27 +36,27 @@ These converted files can be used with various DNS and domain-blocking tools:
 
 | List | Link | Description | Notes |
 |--|--|--| -- |
-| All-in-1 for PiHole| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/yy_all_ads.txt) | 23MB Lists of sites created to serve ads ||
-| All-in-1 1of2 for PiHole| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/yy_all_ads_1_a-p.txt) | 11MB part 1 of 2 of the above main ads list ||
-| All-in-1 2of2 for PiHole| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/yy_all_ads_2_q-z.txt) | 12MB part 2 of 2 of the main ads list  ||
-| Abuse| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/abuse.txt) | Lists of sites created to deceive ||
-| Ads| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/ads.txt) | Ad servers/sites ||
-| Crypto| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/crypto.txt) | Crypto/cryptojacking based sites <br> <sup>Can break normal "good" crypto sites</sup> ||
-| Drugs| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/drugs.txt) | RE sites that deal with illegal drugs <br><sub>Including RX drugs illegal to posses in the US</sub> ||
-| Facebook| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/facebook.txt) | Block FB and FB relate/owned services ||
-| Fraud| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/fraud.txt) | Sites create to fraud ||
-| Gambling| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/gambling.txt) | All gambling based site legit and illegal ||
-| Malware| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/malware.txt) | Known sites that host malware ||
-| Phishing| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/phishing.txt) | Sites created to phish info ||
-| Piracy| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/piracy.txt) | Knows sites that allow for illegal downloads ||
-| Porn| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/porn.txt) | Porn or sites that promote porn ||
-| Ransomware| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/ransomware.txt) | Known sites that host or contain ransomware ||
-| Redirect| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/redirect.txt) | Sites that redirect your from your intended site ||
-| Scam| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/scam.txt) | Sites that intend to scam ||
-| TikTok| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/tiktok.txt) | Copy and pasted into your device ||
-| Torrent| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/torrent.txt) | Torrent directory <br> <sub>Will likely block legit torrent sites used for legal software download</sub> ||
-| Tracking| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/tracking.txt) | Sites dedicated to tracking and gathering visitor info ||
-| Smart TV| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/smart-tv.txt) | Smart TV call home and ads ||
+| All-in-1 ads for PiHole| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/yy_all_ads.txt) | 23MB Lists of sites created to serve ads ||
+| All-in-1 1of2 ads for PiHole| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/yy_all_ads_1_a-p.txt) | 11MB part 1 of 2 of the above main ads list ||
+| All-in-1 2of2 ads for PiHole| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/yy_all_ads_2_q-z.txt) | 12MB part 2 of 2 of the main ads list  ||
+| Abuse| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/abuse.txt) | Lists of sites created to deceive |blocklistproject https://paypal.me/blocklistproject|
+| Ads| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/ads.txt) | Ad servers/sites |blocklistproject https://paypal.me/blocklistproject|
+| Crypto| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/crypto.txt) | Crypto/cryptojacking based sites <br> <sup>Can break normal "good" crypto sites</sup> |blocklistproject https://paypal.me/blocklistproject|
+| Drugs| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/drugs.txt) | RE sites that deal with illegal drugs <br><sub>Including RX drugs illegal to posses in the US</sub> |blocklistproject https://paypal.me/blocklistproject|
+| Facebook| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/facebook.txt) | Block FB and FB relate/owned services |blocklistproject https://paypal.me/blocklistproject|
+| Fraud| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/fraud.txt) | Sites create to fraud |blocklistproject https://paypal.me/blocklistproject|
+| Gambling| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/gambling.txt) | All gambling based site legit and illegal |blocklistproject https://paypal.me/blocklistproject|
+| Malware| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/malware.txt) | Known sites that host malware |blocklistproject https://paypal.me/blocklistproject|
+| Phishing| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/phishing.txt) | Sites created to phish info |blocklistproject https://paypal.me/blocklistproject|
+| Piracy| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/piracy.txt) | Knows sites that allow for illegal downloads |blocklistproject https://paypal.me/blocklistproject|
+| Porn| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/porn.txt) | Porn or sites that promote porn |blocklistproject https://paypal.me/blocklistproject|
+| Ransomware| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/ransomware.txt) | Known sites that host or contain ransomware |blocklistproject https://paypal.me/blocklistproject|
+| Redirect| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/redirect.txt) | Sites that redirect your from your intended site |blocklistproject https://paypal.me/blocklistproject|
+| Scam| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/scam.txt) | Sites that intend to scam |blocklistproject https://paypal.me/blocklistproject|
+| TikTok| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/tiktok.txt) | Copy and pasted into your device |blocklistproject https://paypal.me/blocklistproject|
+| Torrent| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/torrent.txt) | Torrent directory <br> <sub>Will likely block legit torrent sites used for legal software download</sub> |blocklistproject https://paypal.me/blocklistproject|
+| Tracking| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/tracking.txt) | Sites dedicated to tracking and gathering visitor info |blocklistproject https://paypal.me/blocklistproject|
+| Smart TV| [GitHub Pages Link](https://raw.githubusercontent.com/jukatax/Lists/refs/heads/master/GasMask/smart-tv.txt) | Smart TV call home and ads |blocklistproject https://paypal.me/blocklistproject|
 
 # License:
 
