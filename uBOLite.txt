@@ -1,0 +1,353 @@
+! *=====================================================*
+! *====================== BLOCK ========================*
+! *=====================================================*
+! *====================== BLOCK ========================*
+! *============ https://filterlists.com/ ===============*
+! https://raw.githubusercontent.com/reek/anti-adblock-killer/master/anti-adblock-killer-filters.txt
+! https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/CryptoWall-Ransomware-C2-Domain-blocklist.txt
+! https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/Ransomware-Domain-Blocklist.txt
+! https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/TeslaCrypt-Ransomware-C2-Domain-Blocklist.txt
+! https://raw.githubusercontent.com/deathbybandaid/piholeparser/master/Subscribable-Lists/ParsedBlacklists/TorrentLocker-Ransomware-Payment-Sites-Domain-Blocklist.txt
+! https://blocklistproject.github.io/Lists/redirect.txt
+! https://blocklistproject.github.io/Lists/ransomware.txt
+! https://blocklistproject.github.io/Lists/redirect.txt
+! https://blocklistproject.github.io/Lists/scam.txt
+! https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
+! https://raw.githubusercontent.com/kbinani/adblock-youtube-ads/master/signed.txt
+! https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/suspicious/crypto_mining.txt
+! https://raw.githubusercontent.com/MrThreat/Confirmed-Phish/master/phish.txt
+!
+! https://raw.githubusercontent.com/austinheap/sophos-xg-block-lists/master/spotifyads.txt
+! https://easylist.to/easylist/easyprivacy.txt
+! 
+!,domain=~yyordanov.epizy.com|~localhosst|~127.0.0.1
+!/https?:\/\/.*/$csp=frame-src 'none';script-src 'self' 'unsafe-inline' 'unsafe-eval' localhost;frame-ancestors 'none',domain=~amazon.co.uk|~disneyplus.com|~yyordanov.epizy.com|~yuliyan-yordanov.co.uk|~optimizely.com|~leanplum.com|~localhost|~speedtest.net|~192.168.1.120|~127.0.0.1|~192.168.50.1
+!/data-assets\/prod/$script,empty,domain=tesco.com
+/.*yuli(-?\w+)?\.php/$all,empty,domain=~yyordanov.epizy.com|~127.0.0.1
+/.*\.informer\.com/$all
+!/.*\.optimizely\.com/$all
+! block WORK TESCO
+!/tesco\.com/$csp=frame-src 'none';default-src https://* localhost data: 'self' 'unsafe-inline';connect-src 'self' https://*;script-src 'self' 'unsafe-inline' 'unsafe-eval' https://* localhost;frame-ancestors 'none',domain=tesco.com
+!||appleselfservice.global.tesco.org$all,empty
+||wpad.global.tesco.org
+||adservice.google.com^$all
+||flashtalking.com^$all
+||liveperson.net^$all
+||hotjar.com
+/\w+.adobe(target|dtm)\.com/$all,empty
+||nr-data.net$all
+/\/beacon\//$all
+/\/collect\?/$all
+/.*\.tiqcdn\.com/$all,domain=~www.tesco.com|~virginmedia.com|~www.ups.com|~www.sony.co.uk
+/google-analytics_analytics\.js/$script,empty
+
+! block facebook
+/(fb|facebook)\.(net|com)/$3p
+
+! block ads urls
+/(\/(pop|page|side|top|bottom|footer|header|main)?_?ad(\d+|s|-logic)(\.|\/))/$image,script,xmlhttprequest,frame,empty,domain=~www.twitch.tv|~planetradio.co.uk|~leanplum.com|~optimizely.com|~adobe.com|~youtube.com|~disneyplus.com|~adswerve.com
+/\/video-ads?\//$all
+||ymmobi.com$all,empty
+||b-cdn.net$all,empty
+
+! block live TV stream
+/(sofascore|chatango|reseireejoch|bunkirling|m-aeti-bocieva|histats?|amung|inheritwalter|dailyentertain|imhe)\.\w+/$all
+/(vdosupreme|amung|inheritwalter|histat)\.\w+/$all
+/(tcdnwha|ahfdsply)/$all
+/(prgznhukaoggg|qzvlbjatsgzgn|premiumvertising|tholected|denetsuk|thaudray|tqyxmqcowb)/$all
+! BTsport https://hvalasestro.in.rs/streams/btsport2.html
+/(rrjnjnioxfbqaj|ilokhkvijq)\.com\/.*\.js/$script,domain=hvalasestro.in.rs|millionscast.com
+/rrjnjnioxfbqaj|premiumvertasing|pxdghffadlhpbw|ilokhkvijq|z-\d+/$domain=hvalasestro.in.rs|millionscast.com
+
+!anti-adblock
+/\/chpadblock\//$all,empty
+/\/adblock\//$all,empty
+/\/adsbygoogle\//$script,empty
+
+! block iframe
+||safeupload.org^
+||baptismwitnesseddisobedience.com$all
+||d227cncaprzd7y.cloudfront.net$all
+||traveltowold.com
+||xadsmart.com
+||tesvitewbrl.com
+
+! block third-party: email #1
+/(.*\/?)?(track|wf|mail(ings)?|FooterImage|boxever|salesloftlinks|upsellit|medallia).*(open(ed)?|click|trk).*/$image,script,xmlhttprequest,empty,domain=~track.bpost.cloud|~planetradio.co.uk|~www.royalmail.com|~www.linkedin.com|~account.protonmail.com|~mail.protonmail.com|~www.ups.com|~askaxl.co.uk|~wordtracker.com|~fedex.com|~spotify.com
+/(sendgrid|en25|siteimprove|boxever|salesloftlinks|mjt(\.|-|_)|yesware|medallia|signaux|senal|sidekickopen|getsidekick|bl-1\.com|bananatag|mailstat|cirrusinsight|mailfoogae|list-manage\.com|cmail1\.com|icptrack|infusionsoft|intercom\.io|app\.relateiq|rjmetrics|app\.mixpanel|web\.frontapp|mailtrack|go\.toutapp|app.outreach)/$image,script,xmlhttprequest,empty,domain=~tesco.udemy.com
+/.*hubspotlinks\.com/$image,script,frame,xmlhttprequest,empty
+/email\.vitality/$image,script,frame
+||emltrk.com
+||pardot.com/*/open*
+||convertkit-mail2.com/o/*
+||177.20.224.201^
+||taplytics2.orcharon.com/api/mailings/opened/
+/.*\/open.*/$image,script,xmlhttprequest,empty,domain=centaurmedia.com|sales.contentsquare.com
+three-email.co.uk/*?uid*
+||www.dropbox.com/l/*
+||exacttarget.com
+||t.mail.sony-europe.com
+!/ci3\.googleusercontent\.com\/proxy/
+
+! block third-party tracking/spoofing scripts
+||play.google.com/log?*
+/(.*|^)\/?((a(t|s)|spoof)\.js|metri(c|k)|stats|track|trk|e2t|telemetry|logs)/$all,empty,domain=~connect.garmin.com|~www.xdp.co.uk|~track.bpost.cloud|~www.yodel.co.uk|~app.optimizely.com|~www.royalmail.com|~track.dpd.co.uk|~amazon.co.uk|~www.linkedin.com|~www.evanmiller.org|~tesco.udemy.com|~www.freelancer.co.uk|~www.ups.com|~www.smartrecruiters.com|~rutracker.org|~auth.meethue.com|~account.meethue.com|~askaxl.co.uk|~usher.ttvnw.net|~uk.camelcamelcamel.com|~pornolab.net|~nnm-club.me|~twitter.com|~blackmagicdesign.com|~keywordtool.io|~wordtracker.com|~app.bitly.com|~myzamdl.co.uk|~www.paypal.com|~open.spotify.com|~anaconda.cloud|~youtube.com
+
+! block LINKEDIN
+@@||static-exp1.licdn.com/sc/h/br/*$script,domain=www.linkedin.com
+
+! block  cryptominers
+/.*(crypto-?loot|coin-?hive|ursnif|icedid|nicehash|minegrate|(bitconnect|slush)pool|arstechnica|(coins|crypto)pools?|suprnova|coins?mine|\w\w\.pool\.mn|moriaxmr|f2pool|hiddenjadestone|eobot|siamining|myBTCcoin|prohashing|tsdjuuytw7udw).*/$all,domain=~nicehash.com
+/.*\.(1ex|aikapool|altminer|alwayshashing|antpool|arcticrise|argakiig|arstechnica|asicpool|bcmonster|bitcoin|bitconnectpool|bitminter|blockquarry|brutum-pool|btc|btcc|btcchina|btcguild|btgpool|bw|ccminer|chainworksindustries|chaucha|ckpool|clevermining|coin-miners|coinat|coinfoundry|coinmine|coinspool|crypto-pool|cryptopia|cryptopool|cryptopoolmining|cryptopools|dwarfpool|ecoining|ekanembtc|eobot|errantshed|ethermine|extremepool|f2pool|f2xtpool|flypool|give-me-coins|groupfabric|hash-to-coins|hashbag|hashvault|hiddenjadestone|hypernova|inc|ipominer|kano|lapool|litecoinpool|louhimo|lpool|ltcrabbit|luckpool|lycheebit|mine|minergate|miningfield|miningpoolhub|mixpools|mmpool|monerohash|moneroocean|moneropool|moriaxmr|multipool|myBTCcoin|myvnc|nanopool|netcodepool|nicehash|p2pool|paycoinalt|pickaxe|pool|poolmining|prohashing|rigpool|server|siamining|slushpool|sopool|stalwartbucks|steamoctanepool|supportxmr|suprnova|sye|thruhere|tompool|triplehexxx|tsdjuuytw7udw|viabtc|viaxmr|wafflepool|wemineltc|xmrpool|xxx|ypool|zeropool|zmine)\.(cc|cc.st|cl|club|co|co.nz|co.uk|com|cu.cc|cz|fr|hk|host|info|io|is|me|mn|name|net|online|org|pl|pro|pw|ru|stream|trade|us|xxx).*/$all,domain=~arstechnica.com
+
+! block ransomware
+/.*\.(adozeuds|angortra|ascotsprue|begumvelic|bematvocal|bonmawp|boonmower|brazabaya|corolbugan|curryfort|feustude|fopyirr|frascuft|froekuge|giponfeste|goimocoa|greetingshere|hareuna|hateflux|heliofetch|himfinn|hotchunman|italazudda|italisumo|javakale|keratadze|ketteaero|keyedgell|kraskula|kylepasse|lasmeio|leaama|leoraorage|leverdaze|maconslab|materdunst|mazerunci|meccaledgy|mendilobo|milerteddy|nickymaru|niptana|oftpony|onanwhit|orrisbirth|ovaarmor|pileanoted|pinnafaon|pontogrot|proporr|replylaten|ringbalor|slewirk|sofarany|spannflow|spinakrosa|tahaplap|titlecorta|toabolt|ukegaub|vealsithe|vinerteen|wallymac|wolfcrap|zatcurr|zobodine)\.(at|com).*/$all
+
+
+! block SPOTIFY
+||35.186.224.47
+||104.199.64.180
+||/ads$all
+||/ad-logic$all
+||adtechus.com$all
+||adsafeprotected.com$all
+||insightexpressai.com$all
+||leanlab.co$all
+||bitsontherun.com$all
+||jwpcdn.com$all
+||mookie1.com$all
+||myvisualiq.net$all
+||omaze.com$all
+||pubmatic.com$all
+||scorecardresearch.com$all
+||serving-sys.com$all
+||teliasoneracdn.net$all
+||thewhizmarketing.com$all
+||voicefive.com$all
+||flurry.com$all
+||zwizzarmyknife.com$all
+||treanding.best
+! block adjust
+/(atom|events|ulink|view)\.(adjust)\.(com)/$all
+! block akamai
+/((a|ac1\.vip\.sc9|ac208\.sc9|ads|analytics|api|api\.admob|b|broadcast|c|c1\.vip\.sc9|clk1\.vip\.sc9|clk2\.vip\.sc9|clk3\.vip\.sc9|cpm|cpm1|cpm1\.vip\.sc9|cpm2|cpm2\.vip\.sc9|cpm3|cpm3\.vip\.sc9|d|dep|dev1\.vip\.sc9|developer|e|eng|f|g|games|ge-0-0-1-edge1\.sc9|ge-0-0-43-crs1\.sc9|gw|h|i|j|jp|k|l|m|media|metrics|mm|mm104\.sc9|mm1\.vip\.sc1|mm1\.vip\.sc9|mmv|n|network|o|p|p1\.vip\.sc9|paix1\.sc1|pixel|pt|q|r|r2\.vip\.sc9|rmd|s|sc1|sc9|smtp|smtp2|t|tap1\.vip\.sc9|tic1\.vip\.sc9|tracking|tx102\.sc9|tx103\.sc9|u|ukr|v|vip\.sc9|w|wap|waps|wendy|www|www1\.vip\.sc9|www\.admob\.com|x|y|z|zhcn)\.)?(admob|admobclick|admobsphere|akadns|xiaomi)\.(biz|co\.kr|co\.nz|co\.uk|com|de|dk|es|fi|fr|gr|it|jp|kr|mobi|net|no|pt|sg|tk|tw)/$all
+/(a1294\.w20|a1843\.g|a50\.g2|bsams\.eyeblaster|e7876\.dscg|e8218\.dscb1)\.(akadns|akamai|akamaiedge)\.(net)/$all
+/((a|adnxs\.comadplexmedia|ams1-ib|ib)\.)?(adk2x|adnxs)\.(com)/$all
+! block comscore analytics
+/(admetrix|api|aser|cdr|cer|ia1|ia2|iad|im|images|labs|mail2|marketer|mx0|mx1|mx2|my|mymetrix|myresearch|ord|postbuy|proclarity|qat|siterecruit|svn|www)\.(comscore|comscoredatagems|comscoredatamine|comscoredirect|comscorenetworks|mycomscore)\.(com|net|org)/$all
+! block crashlytics
+/(crashlytics|e|reports|settings|settings-crashlytics-1410998606\.us-east-1\.elb|settings-crashlytics-b-103974621\.us-east-1\.elb)\.(163|amazonaws|crashlytics|twimg)\.(com)/$all
+! block googleads and analytics
+/(ad|adclick\.g|ade|adservice|analytics|ee-in-f95\.1|gcdn|googleads4\.g|googleads\.g|pagead-googlehosted\.l|pagead2|pagead46\.l|pagead\.l|partner|partnerad\.l|pubads\.g|s0|s0-2mdn-net\.l|securepubads\.g|tpc|video-ad-stats|www)\.(2mdn|doublecklick|doubleclick|e100|google|googleadservices|googlesyndication|googletagservices)\.(com|net)/$all,domain=~www.google.com|~analytics.google.com|~www.radioenergy.bg|~open.spotify.com|~youtube.com
+! block intercom ads
+/(api|api-iam|api-ping|developers|engineering|funky\.staging|internal|leadvisualdesigner|mobile-sdk-api|muster-sandbox|nexus|nexus-testing|nexus-websocket-a|orientation\.internal|status|store|terraform-modules-test|via|w|widget|woody|www)\.(intercom)\.(io)/$all
+! block mobileapptracking ads (now tune)
+/(ab|academy|beta|click\.api\.cp|configuration\.ma|corp|cp|dev\.lab|event\.api\.cp|lab|labs|ma|mkt|multiverse|ops-prod\.us-west-2\.k8s\.ops|playlist\.ma|request\.api\.cp|stage|support|ui\.cp|updates|www\.cp|www\.ui\.cp)\.(tune)\.(com)/$all
+! block mixpanel analytics
+/(api|decide|switchboard|www)\.(mixpanel)\.([\w\.]+)/$all
+! block moatads / moatanalytics
+/(.*)\.(advertising|edgekey|moatads|moatpixel)\.([\w\.]+)/$all
+! block ccleaner
+/ccleaner\.com\/(inapp|system|auto)/$all
+
+! block Little Snitch
+||obdev.at$all
+||wtf.obdev.at
+||sw-update.obdev.at
+||license.obdev.at
+||digidna.net
+||83.169.2.77
+||78.46.114.187
+||78.46.72.168
+||46.4.223.210
+
+!block Waltr 2
+/(api|shining)\.softorino\.com/$all
+
+! block twitch.tv
+/(client-event-reporter|fandom|amazon-adsystem|imrworldwide|moatads|adtidy|viewer-geolocation\.twitch-ext\.rootonline)(\.twitch)?\.(com|de|\w+)/$all,domain=twitch.tv
+/(science-output\.s3|cognito-identity.us-east-1|firehose.us-east-1)\.amazonaws\.com/$all
+/(twitch|taos-na-prod)\.amazon\.com/$all,empty
+||static.twitchcdn.net/assets/features.video-player.components.video-ads.video-ad-poll.container*$all,empty
+||www.netflix.com/personalization/*$all,empty
+||api.twitch.tv/*/channels/*/extensions$all
+!||static.twitchcdn.net/assets/amazon-ivs-wasmworker*$all
+!/config\/settings\.\w+\.js/$all,domain=twitch.tv
+! Twitch AB testing
+||gstatic.com/cv/js/sender$all
+||extension-files.twitch.tv$all
+/[\w\-_\+]+\.ext-twitch\.tv/$all
+!||video-weaver.lhr03.hls.ttvnw.net$all
+||*.cloudfront.net/custom-moat-video-native.min.js$all,domain=www.twitch.tv
+!/moat((\-?\w+)+)?(\.min)?\.js/$all,domain=www.twitch.tv
+@@/remove_video_ads\.js/$script,domain=www.twitch.tv
+
+! block leanplum.com
+||raygun.io^$all
+||dev.leanplum.com^$all
+@@||sentry.io$xhr,domain=www.leanplum.com
+
+! block optimizely.com
+/logx?\.optimizely\.com/$all,empty
+||castle.io^$all
+||app.optimizely.com/api/v1/inactivity$all,domain=app.optimizely.com
+
+! block youtube.com
+/\/sw\.js/$domain=www.youtube.com
+/(pagead|log(_|-)?event|ad_status).*/$all,empty
+/(manifest|r1---sn-4g5e6ne6|r1---sn-4g5e6nez|r1---sn-4g5e6nl6|r1---sn-4g5e6ns6|r1---sn-4g5e6ns7|r1---sn-4g5e6nsy|r1---sn-4g5e6nz7|r1---sn-4g5e6nzz|r1---sn-4g5edne6|r1---sn-4g5edned|r1---sn-4g5ednll|r1---sn-4g5ednly|r1---sn-4g5ednsd|r1---sn-4g5ednse|r1---sn-4g5ednsl|r1---sn-4g5ednsr|r1---sn-h0jeen76|r1---sn-h0jeened|r1---sn-h0jeln7e|r10---sn-4g5ednzz|r10\.sn-4g5ednzz|r11---sn-4g5ednzz|r11\.sn-4g5ednzz|r15---sn-4g5ednzz|r15\.sn-4g5ednzz|r1\.sn-4g5e6ne6|r1\.sn-4g5e6nez|r1\.sn-4g5e6nl6|r1\.sn-4g5e6ns6|r1\.sn-4g5e6ns7|r1\.sn-4g5e6nsy|r1\.sn-4g5e6nz7|r1\.sn-4g5e6nzz|r1\.sn-4g5edne6|r1\.sn-4g5edned|r1\.sn-4g5ednll|r1\.sn-4g5ednly|r1\.sn-4g5ednsd|r1\.sn-4g5ednse|r1\.sn-4g5ednsl|r1\.sn-4g5ednsr|r1\.sn-h0jeen76|r1\.sn-h0jeened|r1\.sn-h0jeln7e|r2---sn-4g5e6ney|r2---sn-4g5e6nez|r2---sn-4g5e6nl7|r2---sn-4g5e6ns6|r2---sn-4g5e6nsk|r2---sn-4g5e6nsy|r2---sn-4g5e6nsz|r2---sn-4g5e6nzl|r2---sn-4g5edn7y|r2---sn-4g5edned|r2---sn-4g5ednee|r2---sn-4g5ednld|r2---sn-4g5ednle|r2---sn-4g5ednls|r2---sn-4g5ednly|r2---sn-4g5ednse|r2---sn-4g5ednzz|r2---sn-h0jeen76|r2---sn-h0jeener|r2---sn-h0jeln7e|r2---sn-hp57kn6e|r2\.sn-4g5e6ney|r2\.sn-4g5e6nez|r2\.sn-4g5e6nl7|r2\.sn-4g5e6ns6|r2\.sn-4g5e6nsk|r2\.sn-4g5e6nsy|r2\.sn-4g5e6nsz|r2\.sn-4g5e6nzl|r2\.sn-4g5edn7y|r2\.sn-4g5edned|r2\.sn-4g5ednee|r2\.sn-4g5ednld|r2\.sn-4g5ednle|r2\.sn-4g5ednls|r2\.sn-4g5ednly|r2\.sn-4g5ednse|r2\.sn-4g5ednzz|r2\.sn-h0jeen76|r2\.sn-h0jeener|r2\.sn-h0jeln7e|r2\.sn-hp57kn6e|r3---sn-4g5e6nl7|r3---sn-4g5e6nld|r3---sn-4g5e6nle|r3---sn-4g5e6nsk|r3---sn-4g5e6nsr|r3---sn-4g5e6nsy|r3---sn-4g5e6nsz|r3---sn-4g5e6nzs|r3---sn-4g5e6nzz|r3---sn-4g5edne6|r3---sn-4g5edne7|r3---sn-4g5edned|r3---sn-4g5ednee|r3---sn-4g5ednld|r3---sn-4g5ednll|r3---sn-4g5ednls|r3---sn-4g5edns6|r3---sn-4g5ednsd|r3---sn-4g5ednss|r3---sn-4g5ednsz|r3---sn-4g5ednz7|r3---sn-4g5ednzz|r3\.sn-4g5e6nl7|r3\.sn-4g5e6nld|r3\.sn-4g5e6nle|r3\.sn-4g5e6nsk|r3\.sn-4g5e6nsr|r3\.sn-4g5e6nsy|r3\.sn-4g5e6nsz|r3\.sn-4g5e6nzs|r3\.sn-4g5e6nzz|r3\.sn-4g5edne6|r3\.sn-4g5edne7|r3\.sn-4g5edned|r3\.sn-4g5ednee|r3\.sn-4g5ednld|r3\.sn-4g5ednll|r3\.sn-4g5ednls|r3\.sn-4g5edns6|r3\.sn-4g5ednsd|r3\.sn-4g5ednss|r3\.sn-4g5ednsz|r3\.sn-4g5ednz7|r3\.sn-4g5ednzz|r4---sn-4g5e6nez|r4---sn-4g5e6ns6|r4---sn-4g5e6nzs|r4---sn-4g5edney|r4---sn-4g5ednld|r4---sn-4g5ednly|r4---sn-4g5edns7|r4---sn-4g5ednsd|r4---sn-4g5ednsk|r4---sn-4g5ednsy|r4---sn-4g5ednz7|r4---sn-4g5ednzz|r4---sn-h0jeened|r4---sn-h0jeln7e|r4---sn-h0jeln7l|r4\.sn-4g5e6nez|r4\.sn-4g5e6ns6|r4\.sn-4g5e6nzs|r4\.sn-4g5edney|r4\.sn-4g5ednld|r4\.sn-4g5ednly|r4\.sn-4g5edns7|r4\.sn-4g5ednsd|r4\.sn-4g5ednsk|r4\.sn-4g5ednsy|r4\.sn-4g5ednz7|r4\.sn-4g5ednzz|r4\.sn-h0jeened|r4\.sn-h0jeln7e|r4\.sn-h0jeln7l|r5---sn-4g5e6n7k|r5---sn-4g5e6n7r|r5---sn-4g5e6ney|r5---sn-4g5e6nls|r5---sn-4g5e6ns6|r5---sn-4g5e6ns7|r5---sn-4g5e6nsk|r5---sn-4g5e6nss|r5---sn-4g5e6nsy|r5---sn-4g5e6nsz|r5---sn-4g5e6nz7|r5---sn-4g5e6nze|r5---sn-4g5e6nzl|r5---sn-4g5edn7s|r5---sn-4g5ednly|r5---sn-4g5edns6|r5---sn-4g5ednsd|r5---sn-4g5ednsl|r5---sn-4g5ednsr|r5---sn-4g5ednsy|r5---sn-4g5ednsz|r5---sn-4g5ednzz|r5---sn-h0jeenek|r5---sn-hp57yn7y|r5\.sn-4g5e6n7k|r5\.sn-4g5e6n7r|r5\.sn-4g5e6ney|r5\.sn-4g5e6nls|r5\.sn-4g5e6ns6|r5\.sn-4g5e6ns7|r5\.sn-4g5e6nsk|r5\.sn-4g5e6nss|r5\.sn-4g5e6nsy|r5\.sn-4g5e6nsz|r5\.sn-4g5e6nz7|r5\.sn-4g5e6nze|r5\.sn-4g5e6nzl|r5\.sn-4g5edn7s|r5\.sn-4g5ednly|r5\.sn-4g5edns6|r5\.sn-4g5ednsd|r5\.sn-4g5ednsl|r5\.sn-4g5ednsr|r5\.sn-4g5ednsy|r5\.sn-4g5ednsz|r5\.sn-4g5ednzz|r5\.sn-h0jeenek|r5\.sn-hp57yn7y|r6---sn-4g5e6nez|r6---sn-4g5edn7e|r6---sn-4g5edne7|r6---sn-4g5ednee|r6---sn-4g5ednek|r6---sn-4g5edney|r6---sn-4g5ednll|r6\.sn-4g5e6nez|r6\.sn-4g5edn7e|r6\.sn-4g5edne7|r6\.sn-4g5ednee|r6\.sn-4g5ednek|r6\.sn-4g5edney|r6\.sn-4g5ednll|r8---sn-4g5ednzz|r8---sn-n02xgoxufvg3-2gbs|r8\.sn-4g5ednzz|r8\.sn-n02xgoxufvg3-2gbs)\.(googlevideo)\.(com)/$all,domain=www.youtube.com
+
+! Udemy
+||api-iam.intercom.io/messenger/web/ping
+@@||tesco.udemy.com/api-2.0/users/me/subscribed-courses/*/quizzes/*/user-attempted-quizzes/*/stats/*
+
+! Apple
+||securemetrics.apple.com$empty
+
+! block tescomobile.com
+||adservice.google.com^$3p
+||flashtalking.com^$3p
+||liveperson.net^$3p
+
+! block arenabg.com
+||winbetaffiliates.bg^$3p
+||www.facebook.com^$3p
+||facebook.net^$3p
+||cdn.arenabg.com/share/jscripts/analytics.js
+||static.profitshare.bg^
+
+
+! block rutracker.org
+||kwork.ru^
+||robinbob.in^
+||rutrk.org^
+
+! block sensiseeds.com
+||*.klaviyo.com^
+||*.stripe.com^
+
+! block epizy.com
+||infinityfree.net/error/*
+
+! block live.com
+||*.aria.microsoft.com/Collector/*
+
+! 19/12/2019 kindredgroup.com
+||az416426.vo.msecnd.net/scripts/a/ai.0.js
+
+! 17/06/2020 adobe.com
+||/notify.adobe.io/ans/v1/notifications
+||/telemetry.adobe.io/ingest
+
+! 22/06/2020 disneyplus.com
+||/sanalytics.*/b/ss/*
+||global.edge.bamgrid.com/telemetry
+
+! SecuritySpy
+!||bensoftware.com:443
+!||ddns.bensoftware.com
+!||store.bensoftware.com
+/^(\w+\.)?ben(software|bird)(\.plus)?\.com/$all
+||212.56.101.192
+||212.56.101.192:80$all
+||benbird.plus.com$all
+
+||esp-m.aptrinsic.com$all
+
+! 2020-09-25 https://na.alienwarearena.com
+||player.twitch.tv$3p
+
+! akamai pixel
+/pixel_\d+/$all,empty
+
+
+
+/reviews\/submission/$xmlhttprequest,empty
+
+! *=====================================================*
+! *====================== ALLOW ========================*
+! *=====================================================*
+@@||raw.githubusercontent.com/jukatax^
+!@@/(\w-)+yordanov\.(\w+(\.uk)?)/$
+! * allow 04/04/2019 twitch.tv
+@@||cvp.twitch.tv^$xmlhttprequest,domain=www.twitch.tv
+@@||m.media-amazon.com/images/G/01/sm/TwitchSings_Drop5/*$image,domain=www.twitch.tv
+@@||video-edge-*ttvnw.net^$xhr,domain=www.twitch.tv
+! unblock user Sloot
+@@||static-cdn.jtvnw.net/jtv_user_pictures/sloot-*
+@@||api.twitch.tv/api/channels/sloot/access_token?*^$xmlhttprequest,script,domain=www.twitch.tv
+@@||usher.ttvnw.net/api/channel/hls/sloot.m3u8$xhr,domain=www.twitch.tv
+! WORK tesco.com
+@@/tesco\.condecosoftware\.com/
+@@/smetrics\.tesco\.com\/b\/ss/$domain=tescomobile.com|tesco.com|tesco.org|tesco.ie
+@@/googletagmanager\.com/$domain=tescomobile.com|tesco.com|tesco.org|tesco.ie
+@@/googletagservices\.com/$domain=tescomobile.com|tesco.com|tesco.org|tesco.ie
+@@/googleadservices\.com/$domain=tescomobile.com|tesco.com|tesco.org|tesco.ie
+@@/googletag\s\.com/^$domain=tescomobile.com|tesco.com|tesco.org|tesco.ie
+@@/static-vendor.*\.js/$domain=tescomobile.com|tesco.com|tesco.org|tesco.ie
+@@/(cdn\d?|api)\.optimizely\.com/$domain=tesco.com|tescomobile.com|tesco.org|optimizely.com|tesco.ie|localhost|127.0.0.1|localhost
+@@/optimizely\.github\.io/$domain=tesco.com|tescomobile.com|tesco.org|optimizely.com|tesco.ie
+@@||secure.tesco.com/account/en-GB/trackjs$script
+
+@@||maps.google.com^$all
+
+! allow cronometer.com
+@@||static.zdassets.com/web_widget/*
+
+! yammer.com
+@@||browser.pipe.aria.microsoft.com^$xmlhttprequest,domain=www.yammer.com
+
+! youtube.com
+@@||*.googlevideo.com/videoplayback$xhr,domain=youtube.com
+
+! 2020-09-19 soapy.com
+@@||img.sedoparking.com/js/jquery-1.4.2.min.js$script,domain=www.soapy.com
+
+! https://www.linkedin.com
+@@||platform.linkedin.com/litms/utag/*$script,domain=www.linkedin.com
+
+! https://ico.org.uk
+@@||www.browsealoud.com^$script,domain=ico.org.uk
+
+! https://producttesters.sony.eu
+@@/bazaarvoice\.com/$domain=producttesters.sony.eu
+
+! https://www.radioenergy.bg/
+@@||www.google.com/cse/cse.js$script,domain=www.radioenergy.bg
+! *=======================================================*
+! *====================== RE-WRITE =======================*
+! *=======================================================*
+$removeparam=/(icid|tracker|ref|ats|gcid|utm_\w+|p\w_rd_\w+|\w+clid|camp(aign)?|tag|link)(id)?/i,domain=~www.youtube.com|~tesco.udemy.com|~www.linkedin.com|~www.w3schools.com|~udemy.com|~www.freelancer.co.uk|~app.bitly.com
+
+! *=======================================================*
+! *====================== COSMETIC =======================*
+! *=======================================================*
+! https://www.youtube.com
+www.youtube.com##.ytd-display-ad-renderer
+
+! www.speedtest.net
+www.speedtest.net##.eot-dd.eot-dd-content
+
+! optimizely
+app.optimizely.com###blm-butterbar
+
+! https://www.leanplum.com
+www.leanplum.com##.m-study-loading
+
+! www.twitch.tv
+www.twitch.tv##.consent-banner
+
+castfree.me##html body + *
+##html body + *
+##iframe[src="about:blank"]
+##[class*="donation-popup"]
+
+##div[id*='spot-']
+
+
+! 2023-03-24 https://cricfree.pw
+cricfree.pw##.nopadding.hidden-xs.col-sm-12.col-md-3
+cricfree.pw##.nopadding.col-xs-12.col-sm-2.col-md-2
+
+! 2023-11-01 https://www.youtube.com
+||rr4---sn-8pgbpohxqp5-ajtz.googlevideo.com/videoplayback$xhr,domain=www.youtube.com
